@@ -205,4 +205,21 @@ For (let i=0; i<5; i++)
 
 for(let i=0; i<5; i++)
 {alert (i) }
+ 
+ Задача 1
+let login = prompt ("Введите ваш логин");
+let password = prompt ("Введите ваш пароль");
+if (login === "admin" && password === "password"){
+    console.log("Доступ разрешен");
+}else{
+    console.log("Доступ запрещен");
+}
+
+Задача 2
+let number = + prompt("Введите число");
+let sum = 0
+for(let i = 1; i <= number; i++){
+    sum = sum + i;
+    console.log(sum);
+}
 
