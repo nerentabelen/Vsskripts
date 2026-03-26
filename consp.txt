@@ -632,3 +632,189 @@ else{
 let string = prompt ("Введите слово")
 let count = string.length 
 alert (count) 
+
+    ФУНКЦИИ
+
+
+// function sum (a, b) {
+//     return a + b
+// }
+// console.log(sum(5, 3));
+
+
+
+function sum (){
+    let a = 3
+    let b = 2
+    let c = a + b
+    console.log(c)
+}
+sum()
+
+
+// С ПАРАМЕТРАМИ И АРГУМЕНТАМИ
+const sum = function (a, b) {
+    return a + b
+}
+console.log(sum(5, 5))
+
+
+//без параметров без функции без return
+const sum = function () {
+    let a = 3
+    let b = 3
+    let c = a + b
+    console.log(c)
+}
+sum ()
+
+
+
+const лучше обекты !!!!!!!!!!!!!
+
+
+
+// СТРЕЛОЧНАЯ ФУНКЦИЯ
+const sum = (a, b) => a + b
+console.log(sum(3, 5))
+
+
+
+------------------------------------------------------
+//1. Function declaration
+//С параметрами/с аргументами
+// //С return
+// function sum(a, b) {
+//     return a + b //функция должна возвращать результат //callback
+// }
+ 
+// console.log(sum(3,2))//Вызов функции
+ 
+ 
+//Без параметров/без аргументов
+//Без return
+// function sum () {
+//     let a = 3
+//     let b = 2
+//     let c = a + b
+//     console.log(c) //callback
+// }
+// sum()
+ 
+//2. Function expression
+//С параметрами/с аргументами и с return
+// const sum = function (a, b) {
+//     return a + b
+// }
+// console.log(sum(4,5))
+ 
+//Без параметров/без аргументов// без return
+// const sum = function () {
+//     let a = 3
+//     let b = 2
+//     let c = a + b
+//     console.log(c)
+// }
+ 
+// sum()
+ 
+// console.log(typeof(sum))
+ 
+//3. Arrow function
+//С параметрами/с аргументами и с return
+// const sum = (a, b) => a + b
+// console.log(sum(3,2))
+ 
+// const sum = (a, b) => {
+//     return a + b
+// }
+// console.log(sum(3,2))
+ 
+ 
+//Без параметров/без аргументов// без return
+// const sum = () => {
+//     let a = 3
+//     let b = 2
+//     let c = a + b
+//     console.log (c)
+// }
+ 
+// sum()
+---------------------------------------------------------------------------
+
+
+                    ОБЪЕКТЫ
+
+const user = {
+    name: "Petrov",
+    age: 30,
+    phone: '3928322'
+}
+ 
+const clone = user
+for ( let key in user) {
+    clone[key] = user[key]
+}
+
+console.log(clone.name)
+
+                    РАБОТА С МАССИВАМИ
+это сложная структура данных
+массив автоматически считает элементы
+индекс элементов начинается с 0
+нумерация индексов в массиве начинается с 0
+
+
+const array = [ "hello", true, 3, "old", 3,14]
+
+
+console.log(array[1])
+
+
+
+\
+
+function sumAll(){
+    let sum = 0;
+    for (let i = 0; i<arguments.length; i++){  // проход по аргументу функции 
+        sum += arguments[i]; // сум = сум + аргуменет
+    }
+    return sum;
+}
+console.log(sumAll(1,2,3))
+
+
+
+const array = [ "hello", true, 3, "old", 3,14]
+
+array.push("5")
+console.log(array)
+array.pop()
+console.log(array)
+
+
+филь тр метод
+
+
+// filter(element, index) возращает новый массив, удовлетворяет условию( все четные числа)
+//функция филтр дробит каждый элемент на свое значение
+
+const array = [ -2, 3, 0, 10, 25, 34, 3.14]
+const newArray = array.filter(element => {
+    return element % 2 == 0
+})
+
+console.log(array)
+console.log(newArray)
+
+
+
+
+
+//previous.concat(next) слияние массивов
+const arrayFirst = [-3, -2, -1]
+const arraySecond = [0, 1, 2]
+const arrayThird = [10, 20, 30]
+
+
+console.log(arrayFirst.concat(arraySecond).concat(arrayThird))
